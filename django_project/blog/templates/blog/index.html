@@ -1,0 +1,37 @@
+    {% extends "blog/base.html" %}
+    {% block title %}
+
+    Welcome
+
+    {% endblock %}
+    {% block content %}
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Welcome to Cloud Applications Blog</h1>
+        <p>If you want to inspire others, always communicate your why first. Only when we know why we do things, will we feel a sense of belonging, and decide to do it.
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Business</h2>
+          <p>Cloud Computing 1. Amazon Web Services 2. Microsoft Azure Ecosystem 3. Google Cloud 4. Heroku, Docker, Kubernetes
+          </p>
+          <p><a class="btn btn-default" href="{% url 'business' %}" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>DevOps</h2>
+          <p>Eclipse, Git, Maven, Jenkins, Junit, TestNG, Cucumber, Selenium IDE/ Webdriver / Grid, Appium for Mobile, Protractor for Angular JSAutomation Anywhere, ReadyAPI, SOAPUI </p>
+          <p><a class="btn btn-default" href="{% url 'devops' %}" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>AI</h2>
+          <p>Pandas ML, SciKit-learn, XGBoost Regression pandas ml, TensorFlow, Pytorch, Python Programming</p>
+          <p><a class="btn btn-default" href="{% url 'ai' %}" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+        {% endblock %}
